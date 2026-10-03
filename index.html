@@ -216,9 +216,9 @@ if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
   if("IntersectionObserver" in window){
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
     document.querySelectorAll("section:not(.hero) > .wrap").forEach(w=>{w.classList.add("rv");io.observe(w)});
-  }
+}
 }
 </script>
 </body>
-    </html>
+ </html>
     
